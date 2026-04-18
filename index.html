@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CensorIt | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="index.html">CensorIt</a>
+        <nav>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="how-to-install.html">How to Install</a></li>
+            <li><a href="purpose.html">Purpose</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1>Control what gets through.</h1>
+            <p>
+              CensorIt helps content creators catch sensitive material
+              early and blurs it before it reaches the audience.
+            </p>
+            <a class="btn" href="purpose.html">Why we exist</a>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg
+              class="hero-camera"
+              viewBox="0 0 240 200"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label=""
+            >
+              <defs>
+                <radialGradient id="cam-glow-l" cx="0%" cy="50%" r="75%">
+                  <stop offset="0%" stop-color="#84cc16" stop-opacity="0.55" />
+                  <stop offset="100%" stop-color="#84cc16" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="cam-glow-r" cx="100%" cy="50%" r="75%">
+                  <stop offset="0%" stop-color="#c084fc" stop-opacity="0.5" />
+                  <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="cam-lens" cx="35%" cy="35%" r="65%">
+                  <stop offset="0%" stop-color="#2a2a2e" />
+                  <stop offset="55%" stop-color="#0c0c0f" />
+                  <stop offset="100%" stop-color="#18181c" />
+                </radialGradient>
+                <radialGradient id="cam-lens-tint-l" cx="15%" cy="45%" r="50%">
+                  <stop offset="0%" stop-color="#84cc16" stop-opacity="0.35" />
+                  <stop offset="100%" stop-color="#84cc16" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="cam-lens-tint-r" cx="95%" cy="50%" r="45%">
+                  <stop offset="0%" stop-color="#c084fc" stop-opacity="0.3" />
+                  <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+                </radialGradient>
+              </defs>
+              <ellipse cx="58" cy="102" rx="88" ry="96" fill="url(#cam-glow-l)" />
+              <ellipse cx="182" cy="102" rx="88" ry="96" fill="url(#cam-glow-r)" />
+              <rect
+                x="46"
+                y="58"
+                width="22"
+                height="14"
+                rx="3"
+                fill="#0a0a0c"
+                stroke="#f4f4f5"
+                stroke-width="2.5"
+              />
+              <path
+                d="M112 72 L128 72 L124 52 L116 52 Z"
+                fill="#0a0a0c"
+                stroke="#f4f4f5"
+                stroke-width="2.5"
+                stroke-linejoin="round"
+              />
+              <rect
+                x="52"
+                y="72"
+                width="136"
+                height="92"
+                rx="16"
+                fill="#0a0a0c"
+                stroke="#f4f4f5"
+                stroke-width="3.5"
+              />
+              <rect x="172" y="98" width="16" height="7" rx="2" fill="#f4f4f5" />
+              <circle
+                cx="120"
+                cy="118"
+                r="38"
+                fill="none"
+                stroke="#f4f4f5"
+                stroke-width="5"
+              />
+              <circle cx="120" cy="118" r="28" fill="url(#cam-lens)" />
+              <circle cx="120" cy="118" r="28" fill="url(#cam-lens-tint-l)" />
+              <circle cx="120" cy="118" r="28" fill="url(#cam-lens-tint-r)" />
+              <circle cx="128" cy="108" r="5" fill="#71717a" opacity="0.85" />
+              <circle cx="120" cy="118" r="10" fill="none" stroke="#27272a" stroke-width="1.2" opacity="0.6" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Explore this site</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>How to install</h3>
+              <p>Run this static site on your machine or preview it locally.</p>
+              <a class="text-link" href="how-to-install.html">View steps →</a>
+            </article>
+            <article class="card">
+              <h3>Purpose</h3>
+              <p>What we are building toward and why CensorIt exists.</p>
+              <a class="text-link" href="purpose.html">Read more →</a>
+            </article>
+            <article class="card">
+              <h3>FAQ</h3>
+              <p>Quick answers about setup, policies, and how CensorIt works.</p>
+              <a class="text-link" href="faq.html">Open FAQ →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; <span id="year"></span> CensorIt. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
