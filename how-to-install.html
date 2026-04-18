@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CensorIt | How to Install</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="index.html">CensorIt</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="how-to-Install.html">How to Install</a></li>
+            <li><a href="purpose.html">Purpose</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>How to Install</h1>
+          <p>
+            The CensorIt marketing site is a static bundle (HTML, CSS, and a small
+            script). There is no package manager required. Pick the path that
+            matches how you work.
+          </p>
+
+          <ol class="steps">
+            <li>
+              <strong>Get the files</strong>
+              <p>
+                Clone the repository or download the folder that contains
+                <code>index.html</code> and the <code>styles.css</code> /
+                <code>script.js</code> assets.
+              </p>
+              <pre><code>git clone &lt;your-repo-url&gt;
+cd business-website</code></pre>
+            </li>
+            <li>
+              <strong>Open the site</strong>
+              <p>
+                Double-click <code>index.html</code> to open it in your default
+                browser, or drag the file into an open browser window.
+              </p>
+            </li>
+            <li>
+              <strong>Optional: local server</strong>
+              <p>
+                For routing and caching behavior closer to production, serve the
+                folder with any static file server. For example, with Python:
+              </p>
+              <pre><code>python -m http.server 8080</code></pre>
+              <p>Then visit <code>http://localhost:8080</code> in your browser.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; <span id="year"></span> CensorIt. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
